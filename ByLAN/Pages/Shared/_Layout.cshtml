@@ -1,16 +1,39 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>@ViewData["Title"] - ByLAN</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="~/css/site.css"/>
+   <meta name="keywords" content="gaming, html">
+   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   	<link href="img/favicon.ico" rel="shortcut icon"/>
+   
+       <link rel=”icon” href="favicon.ico" type=”image/x-icon” />
+    <link rel=”shortcut icon” href="favicon.ico" type=”image/x-icon”/>
+    <!-- Google font -->
+    	<link href="css/fonts.googleapis.css" rel="stylesheet">
+    
+    	<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		 <link rel="stylesheet" href="css/Signup.css"/>
+    	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+    	<link rel="stylesheet" href="css/magnific-popup.css"/>
+    	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+    	<link rel="stylesheet" href="css/animate.css"/>
+    	<link rel="stylesheet" href="css/slicknav.min.css"/>
+    
+    	<!-- Main Stylesheets -->
+    	<link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 <header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container">
+            <a class="site-logo" asp-area="" asp-page="/Index">
+           			<img src="img/ByLAN_logo.png" width="150px" alt="logo">
+           		</a>
             <a class="navbar-brand" asp-area="" asp-page="/Index">ByLAN</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -19,13 +42,34 @@
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Index">Hovedside</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Nyheter">Nyheter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Info">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Billetter">Billetter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Crew">Crew</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Om_oss">Om oss</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Samarbeidspartnere">Samarbeidspartnere</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-page="/FAQ">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Profil">Profil</a>
                     </li>
                 </ul>
-                <p class="nav navbar-text">Hello, @User.Identity.Name!</p>
+                <p class="nav navbar-text">Hello @User.Identity.Name</p>
             </div>
         </div>
     </nav>
@@ -37,14 +81,54 @@
 </div>
 
 <footer class="border-top footer text-muted">
-    <div class="container">
-        &copy; 2021 - ByLAN - <a asp-area="" asp-page="/Privacy">Privacy</a>
-    </div>
+	<!-- Footer section -->
+	<div class="footer-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-1">
+					<div class="footer-widget">
+						<div class="about-widget">
+							<img src="img/bylan.png" alt="">
+ 
+						</div>
+					</div>
+				</div>
+				<h1 style="color:white">Kontakt</h1>
+				<p>&#8205;&#8205;&#8205;</p>
+				<img src="img/phone.png" alt="" width="16px"/>
+				<span style="color:white"><a href="tel:92653403" style="color:white">+47 92653403</a></span>
+				<p></p>
+				<img src="img/mail.png" alt="" width="20px"/>
+				<span style="color:white"><a href="mailto:info@bylan.net" style="color:white">info@bylan.net</a></span>
+				<div class="copyright"><a href=""><p>
+					Copyright &copy;<script>document.write(new Date().getFullYear());</script> ByLAN. All rights reserved.</p></a></div>
+			</div>
+			</div>
+		<div class="social-links-warp">
+			<div class="container">
+				<div class="social-links">
+					<a href="https://www.instagram.com/bylan_bergen/"><i class="fa fa-instagram"></i><span>instagram</span></a>
+					<a href="https://www.facebook.com/BylanBergen/"><i class="fa fa-facebook"></i><span>facebook</span></a>
+					<a  href="https://www.twitch.tv/bylan/videos"><img src="img/twitch-icon-White.png" alt=""> <i class="fa fa-twitch"></i><span>twitch</span></a>
+					<a href="https://discord.gg/zVeAS2k"><i class="fab fa-discord"></i><span>discord</span></a>
+					<a href="https://www.youtube.com/channel/UCZkdFExCkcgBE1p49b1_8mw"><i class="fa fa-youtube"></i><span>youtube</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
 </footer>
-
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
+<!-- Footer section end -->
+	<!--====== Javascripts & Jquery ======-->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.slicknav.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
 
 @await RenderSectionAsync("Scripts", required: false)
 </body>
